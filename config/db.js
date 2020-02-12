@@ -20,4 +20,10 @@ const connectDB = async () => {
 };
 
 
-module.exports = connectDB;
+module.exports = connectDB, {
+    parserOptions: {
+        parser: "babel-eslint",
+        sourceType: 'module',
+        allowImportExportEverywhere: true
+    }
+};
